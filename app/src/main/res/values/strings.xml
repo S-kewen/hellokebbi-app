@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">HelloKeb_bi</string>
+    <string name="title_activity_scanintro">scanintro</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="welcome">Welcome</string>
+    <string name="title_activity_aaa">aaa</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="search">search</string>
+    <string name="more">more</string>
+
+    <string-array name="spn_list">
+        <item>Yunlin</item>
+        <item>Taipei</item>
+        <item>NewTaipeiCity</item>
+        <item>Keelung</item>
+        <item>Taoyuan</item>
+        <item>Taichung</item>
+        <item>Kaohsiung</item>
+    </string-array>
+
+    <string-array name="Yunlin_list">
+        <item>Douliu</item>
+        <item>Huwei</item>
+        <item>Cihtong</item>
+        <item>Linnei</item>
+        <item>Gukeng</item>
+    </string-array>
+
+    <string-array name="Taipei_list">
+        <item>Beitou</item>
+        <item>Daan</item>
+        <item>Datong</item>
+        <item>Nangang</item>
+        <item>Neihu</item>
+        <item>Shilin</item>
+        <item>Songshan</item>
+        <item>Wanhua</item>
+    </string-array>
+
+    <string-array name="NewTaipeiCity_list">
+        <item>Banqiao</item>
+        <item>Zhonghe</item>
+        <item>Yonghe</item>
+        <item>Tucheng</item>
+        <item>Xinzhuang</item>
+        <item>Sanchong</item>
+        <item>Luzhou</item>
+        <item>Wugu</item>
+        <item>Tamsui</item>
+        <item>Bali</item>
+        <item>Jinshan</item>
+    </string-array>
+
+    <string-array name="Keelung_list">
+        <item>Zhongzheng</item>
+        <item>Zhongshan</item>
+        <item>Ren-ai</item>
+        <item>Sinyi</item>
+        <item>Anle</item>
+        <item>Nuannuan</item>
+        <item>Qidu</item>
+    </string-array>
+
+    <string-array name="Taoyuan_list">
+        <item>Bade</item>
+        <item>Daxi</item>
+        <item>Longtan</item>
+        <item>Luzhu</item>
+        <item>Pingzhen</item>
+        <item>Taoyuan</item>
+        <item>Zhongli</item>
+    </string-array>
+
+    <string-array name="Taichung_list">
+        <item>Central</item>
+        <item>East</item>
+        <item>South</item>
+        <item>West</item>
+        <item>North</item>
+        <item>Beitun</item>
+        <item>Xitun</item>
+    </string-array>
+
+    <string-array name="Kaohsiung_list">
+        <item>Zuoying District</item>
+        <item>Sanmin District</item>
+        <item>Cianjhen District</item>
+        <item>Siaogang District</item>
+        <item>Linyuan District</item>
+        <item>Dashu District</item>
+        <item>Liouguei District</item>
+    </string-array>
+
+
+    <string-array name="Douliu">
+        <item>Douliu Xiping Rd. Post Office(Yunlin Branch 901)</item>
+        <item>Douliu Dalun Post Office(Yunlin Branch 2)</item>
+        <item>Douliu Shiliu Post Office(Yunlin Branch 3)</item>
+        <item>Douliou Jhenbei Post Office(Yunlin Branch 4)</item>
+        <item>Douliu Yong-an Post Office(Yunlin Branch 5)</item>
+    </string-array>
+
+    <string-array name="Dounan">
+        <item>Dounan Post Office(Yunlin Branch 11)</item>
+        <item>Dounan Shigui Post Office(Yunlin Branch 13)</item>
+        <item>Dounan Xinguang Post Office(Yunlin Branch 14)</item>
+    </string-array>
+
+    <string-array name="spn3_list">
+        <item>By Time desc</item>
+        <item>By Time asc</item>
+        <item>By Money desc</item>
+        <item>By Money asc</item>
+    </string-array>
+
+    <string-array name="Huwei">
+        <item>Huwei Post Office(Yunlin Branch 17)</item>
+        <item>Huwei Yuanhuan Post Office(Yunlin Branch 18)</item>
+        <item>National Huwei University of Science and Technology Post Office(Yunlin Branch 22)</item>
+    </string-array>
+
+    <string-array name="Citong">
+        <item>Citong Post Office(Yunlin Branch 1)</item>
+        <item>Citong Raoping Post Office(Yunlin Branch 6)</item>
+    </string-array>
+
+    <string-array name="Linnei">
+        <item>Linnei Post Office(Yunlin Branch 7)</item>
+    </string-array>
+
+    <string-array name="Gukeng">
+        <item>Gukeng Post Office(Yunlin Branch 8)</item>
+        <item>Gukeng Donghe Post Office(Yunlin Branch 9)</item>
+        <item>Gukeng Caoling Post Office(Yunlin Branch 10)</item>
+    </string-array>
+    <string name="title_activity_credit_card">CreditCard</string>
+</resources>

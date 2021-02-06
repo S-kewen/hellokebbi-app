@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hellokeb_bi">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.RentalDetail"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.OtpSuccessful"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Otp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ConfirmOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Scan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TradeDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Homepage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Successfully"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccountManager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutHelloKebbi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CustomerService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreditCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RentHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScanIntro"
+            android:label="@string/title_activity_scanintro"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yongbeom.aircalendar.AirCalendarDatePickerActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+    </application>
+
+</manifest>

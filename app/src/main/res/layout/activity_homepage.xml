@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Homepage">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_select_country"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#ececec" />
+
+
+                <TextView
+                    android:id="@+id/startText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="County"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spn"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="30dp"
+                    android:entries="@array/spn_list"
+                    android:spinnerMode="dialog" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_town"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="#ececec" />
+
+                <TextView
+                    android:id="@+id/endText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Town"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spn2"
+                    android:layout_width="170dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:entries="@array/Yunlin_list"
+                    android:spinnerMode="dialog" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_time"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_select_start_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="selectTime">
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="#ececec" />
+
+
+                <TextView
+                    android:id="@+id/start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Start  time"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/start_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Start  time"
+                    android:textColor="#3F51B5" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_end_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="#ececec" />
+
+                <TextView
+                    android:id="@+id/end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:onClick="selectTime"
+                    android:text="End  time"
+                    android:textColor="#9b9b9b"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/end_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="35dp"
+                    android:onClick="selectTime"
+                    android:text="End  time"
+                    android:textColor="#3F51B5" />
+
+                <Button
+                    android:id="@+id/homepage_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toEndOf="@+id/end_time"
+                    android:onClick="search"
+                    android:text="Search"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/homepage_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/colorPrimary"
+            app:fabCradleMargin="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="?attr/actionBarSize"
+            app:layout_anchorGravity="top">
+
+            <ListView
+                android:id="@+id/kebbilist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:divider="@null" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/confirmOrder_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:onClick="onHomepageMainClick"
+            app:backgroundTint="#95DDFD"
+            app:borderWidth="0dp"
+            app:elevation="0dp"
+            app:fabCustomSize="85dp"
+            app:layout_anchor="@id/homepage_bar"
+            app:maxImageSize="100dp"
+            app:srcCompat="@drawable/kebbiicon"
+            app:tint="@null" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/confirmOrder_about"
+            android:layout_width="67dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onPopupButtonClick2"
+            android:src="@drawable/ic_info_outline_black_24dp"
+            app:backgroundTint="#A2E2FF"
+            app:fabCustomSize="65dp"
+            app:layout_anchor="@id/homepage_bar"
+            app:maxImageSize="35dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/confirmOrder_user"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="645dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/colorPrimary"
+            android:onClick="onPopupButtonClick"
+            android:src="@drawable/ic_person_black_24dp"
+            app:backgroundTint="#A2E2FF"
+            app:fabCustomSize="65dp"
+            app:maxImageSize="35dp" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ProgressBar
+        android:id="@+id/homepage_load"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

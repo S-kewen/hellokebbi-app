@@ -1,0 +1,2 @@
+rootProject.name='HelloKeb_bi'
+include ':app'
